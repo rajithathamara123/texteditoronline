@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="applyFormatting('bold')"><img src = "bold-xxl.png" width ="15" height ="15"></button>
+    <button onclick="applyFormatting('underline')"><img src = "format_underline_white_192x192.png" width ="15" height ="15"></button>
+    <button onclick="applyFormatting('italic')"><img src = "italic-xxl.png" width ="15" height ="15"></button>
+    <input type="color" id="fontColor">
+    <button onclick="setTextAlignment('left')"><img src = "left.png" width ="15" height ="15"></button>
+    <button onclick="setTextAlignment('right')"><img src = "right.png" width ="15" height ="15"></button>
+    <button onclick="setTextAlignment('justify')"><img src = "justify.png" width ="15" height ="15"></button>
+    <button onclick="setTextAlignment('center')"><img src = "center.png" width ="15" height ="15"></button>
+    <button onclick="undo()"><img src = "undo-4-32.png" width ="15" height ="15"></button>
+    <button onclick="redo()"><img src = "action-redo-32.png" width ="15" height ="15"></button>
+  </div>
+  <div class="editor" contenteditable="true" id="editor">
+    <p>
+      Sample text
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
